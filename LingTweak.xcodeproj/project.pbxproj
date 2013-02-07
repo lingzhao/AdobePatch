@@ -13,6 +13,12 @@
 		5210D8841696B29600C5200D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5210D8821696B29600C5200D /* Credits.rtf */; };
 		5210D8871696B29600C5200D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5210D8861696B29600C5200D /* AppDelegate.m */; };
 		5210D88A1696B29600C5200D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5210D8881696B29600C5200D /* MainMenu.xib */; };
+		5210D8961696B43100C5200D /* TweakController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5210D8951696B43100C5200D /* TweakController.m */; };
+		5210D8AC169A97B000C5200D /* BLAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 5210D8AB169A970F00C5200D /* BLAuthentication.m */; };
+		5210D8AE169A986A00C5200D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5210D8AD169A986A00C5200D /* Security.framework */; };
+		5210D8B8169AA52300C5200D /* AdobeSystems.png in Resources */ = {isa = PBXBuildFile; fileRef = 5210D8B7169AA52300C5200D /* AdobeSystems.png */; };
+		5210D8BB169AB2BD00C5200D /* hosts-patched in Resources */ = {isa = PBXBuildFile; fileRef = 5210D8BA169AB2BD00C5200D /* hosts-patched */; };
+		5210D8BD169AD1B500C5200D /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5210D8BC169AD1B500C5200D /* icon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +35,14 @@
 		5210D8851696B29600C5200D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5210D8861696B29600C5200D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5210D8891696B29600C5200D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5210D8941696B43100C5200D /* TweakController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweakController.h; sourceTree = "<group>"; };
+		5210D8951696B43100C5200D /* TweakController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweakController.m; sourceTree = "<group>"; };
+		5210D8AA169A970F00C5200D /* BLAuthentication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLAuthentication.h; sourceTree = "<group>"; };
+		5210D8AB169A970F00C5200D /* BLAuthentication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLAuthentication.m; sourceTree = "<group>"; };
+		5210D8AD169A986A00C5200D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5210D8B7169AA52300C5200D /* AdobeSystems.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AdobeSystems.png; sourceTree = "<group>"; };
+		5210D8BA169AB2BD00C5200D /* hosts-patched */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "hosts-patched"; sourceTree = "<group>"; };
+		5210D8BC169AD1B500C5200D /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5210D8AE169A986A00C5200D /* Security.framework in Frameworks */,
 				5210D8741696B29600C5200D /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +78,7 @@
 		5210D8721696B29600C5200D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5210D8AD169A986A00C5200D /* Security.framework */,
 				5210D8731696B29600C5200D /* Cocoa.framework */,
 				5210D8751696B29600C5200D /* Other Frameworks */,
 			);
@@ -82,8 +98,11 @@
 		5210D8791696B29600C5200D /* LingTweak */ = {
 			isa = PBXGroup;
 			children = (
+				5210D8A9169A963400C5200D /* Library */,
 				5210D8851696B29600C5200D /* AppDelegate.h */,
 				5210D8861696B29600C5200D /* AppDelegate.m */,
+				5210D8941696B43100C5200D /* TweakController.h */,
+				5210D8951696B43100C5200D /* TweakController.m */,
 				5210D8881696B29600C5200D /* MainMenu.xib */,
 				5210D87A1696B29600C5200D /* Supporting Files */,
 			);
@@ -93,13 +112,25 @@
 		5210D87A1696B29600C5200D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5210D8BA169AB2BD00C5200D /* hosts-patched */,
+				5210D8B7169AA52300C5200D /* AdobeSystems.png */,
 				5210D87B1696B29600C5200D /* LingTweak-Info.plist */,
+				5210D8BC169AD1B500C5200D /* icon.icns */,
 				5210D87C1696B29600C5200D /* InfoPlist.strings */,
 				5210D87F1696B29600C5200D /* main.m */,
 				5210D8811696B29600C5200D /* LingTweak-Prefix.pch */,
 				5210D8821696B29600C5200D /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5210D8A9169A963400C5200D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				5210D8AA169A970F00C5200D /* BLAuthentication.h */,
+				5210D8AB169A970F00C5200D /* BLAuthentication.m */,
+			);
+			name = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +187,9 @@
 				5210D87E1696B29600C5200D /* InfoPlist.strings in Resources */,
 				5210D8841696B29600C5200D /* Credits.rtf in Resources */,
 				5210D88A1696B29600C5200D /* MainMenu.xib in Resources */,
+				5210D8B8169AA52300C5200D /* AdobeSystems.png in Resources */,
+				5210D8BB169AB2BD00C5200D /* hosts-patched in Resources */,
+				5210D8BD169AD1B500C5200D /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,8 +200,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5210D8AC169A97B000C5200D /* BLAuthentication.m in Sources */,
 				5210D8801696B29600C5200D /* main.m in Sources */,
 				5210D8871696B29600C5200D /* AppDelegate.m in Sources */,
+				5210D8961696B43100C5200D /* TweakController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +295,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LingTweak/LingTweak-Prefix.pch";
 				INFOPLIST_FILE = "LingTweak/LingTweak-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -271,6 +308,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LingTweak/LingTweak-Prefix.pch";
 				INFOPLIST_FILE = "LingTweak/LingTweak-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -295,6 +333,7 @@
 				5210D88F1696B29600C5200D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
